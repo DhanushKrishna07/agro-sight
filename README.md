@@ -70,11 +70,10 @@ These are predictions of fruits with no disease symptoms.
 ### 🇮🇳 Chatbot – Hindi  
 ![Chatbot Hindi](assets/screenshots/Chatbot%20Hindi.png)
 
-### 🇮🇳 Chatbot – Telugu 
-![Chatbot Telugu](assets/screenshots/Chatbot%20Telugu.png)
+### 🇮🇳 Chatbot – Telugu                                                 ### 🇮🇳 Chatbot – Kannada  
+![Chatbot Telugu](assets/screenshots/Chatbot%20Telugu.png)              ![Chatbot Kannada](assets/screenshots/Chatbot%20Kannada.png)
 
-### 🇮🇳 Chatbot – Kannada  
-![Chatbot Kannada](assets/screenshots/Chatbot%20Kannada.png)
+
 
 ### 📈 Model Accuracy & Loss  
 ![Training and Validation Graph](assets/screenshots/Training%20and%20Validation%20Graph.png)
