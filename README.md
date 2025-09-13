@@ -70,8 +70,8 @@ These are predictions of fruits with no disease symptoms.
 ### 🇮🇳 Chatbot – Hindi  
 ![Chatbot Hindi](assets/screenshots/Chatbot%20Hindi.png)
 
-### 🇮🇳 Chatbot – Telugu                                                 ### 🇮🇳 Chatbot – Kannada  
-![Chatbot Telugu](assets/screenshots/Chatbot%20Telugu.png)              ![Chatbot Kannada](assets/screenshots/Chatbot%20Kannada.png)
+### 🇮🇳 Chatbot – Telugu                                                                                                                                                                 ### 🇮🇳 Chatbot – Kannada  
+![Chatbot Telugu](assets/screenshots/Chatbot%20Telugu.png)                                                                                              ![Chatbot Kannada](assets/screenshots/Chatbot%20Kannada.png)
 
 
 
