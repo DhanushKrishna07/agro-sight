@@ -9,21 +9,13 @@ from flask_cors import CORS
 app = Flask(__name__)
 CORS(app)
 
-# Railway model path
-railway_model_path = "/app/models/enhanced_fruit_disease_model.h5"
+MODEL_PATH = "enhanced_fruit_disease_model.h5"
 
-# Local model path
-local_model_path = "enhanced_fruit_disease_model.h5"
-
-# Auto select correct model path
-if os.path.exists(railway_model_path):
-    print("🚀 Running on Railway — Loading model from Railway storage...")
-    model = tf.keras.models.load_model(railway_model_path)
-elif os.path.exists(local_model_path):
-    print("🖥 Running locally — Loading model from local file...")
-    model = tf.keras.models.load_model(local_model_path)
+if os.path.exists(MODEL_PATH):
+    print("📦 Model found, loading...")
+    model = tf.keras.models.load_model(MODEL_PATH)
 else:
-    raise FileNotFoundError("❌ Model file not found in either local or Railway location.")
+    raise FileNotFoundError(f"❌ Model file not found at: {MODEL_PATH}")
 
 # Define the class labels (update these with your actual model classes)
 class_names = ['Anthracnose', 'Defect Dragon Fruit', 'Fresh Dragon Fruit', 'fruit_fly', 'healthy_guava']
@@ -68,4 +60,5 @@ def chat():
 
 if __name__ == "__main__":
     app.run(debug=True)
+
 
