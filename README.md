@@ -234,5 +234,5 @@ This project is licensed under the **MIT License** — free to use, modify, and 
 ## 📧 Contact
 
 📨 **Email:** dhanushkrishnab@gmail.com  
-🔗 **LinkedIn:** linkedin.com/in/dhanushkrishna15  
+🔗 **LinkedIn:** https://www.linkedin.com/in/dhanushkrishna15  
 
