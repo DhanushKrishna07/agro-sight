@@ -22,6 +22,12 @@ You can experience the interactive website live here: [**🌾Agro-Sight**](https
 
 ---
 
+🌿 Agro-Sight — AI-Driven Agricultural Intelligence System
+<p align="center"> <img src="https://raw.githubusercontent.com/DhanushKrishna07/agro-sight/main/assets/banner.png" width="85%" /> </p>
+<p align="center"> <img src="https://img.shields.io/badge/Framework-Flask-00979D?style=flat&logo=flask&logoColor=white" /> <img src="https://img.shields.io/badge/Machine%20Learning-TensorFlow-FF6F00?style=flat&logo=tensorflow&logoColor=white" /> <img src="https://img.shields.io/badge/AI%20Model-Gemini%20API-4285F4?style=flat&logo=google&logoColor=white" /> <img src="https://img.shields.io/badge/Frontend-HTML%2C%20CSS%2C%20JS-blue?style=flat" /> <img src="https://img.shields.io/badge/Deployed%20on-HuggingFace-yellow?style=flat&logo=huggingface" /> <img src="https://img.shields.io/badge/License-MIT-green?style=flat" /> </p>
+
+---
+
 ## 📚 Table of Contents
 
 - [🌾 Overview](#agro-sight--ai-driven-agricultural-intelligence-system)
