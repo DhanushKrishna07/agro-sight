@@ -123,9 +123,9 @@ These are predictions of fruits with no disease symptoms.
 
   **4. Result Display:** The predicted class (e.g., Fruit Fly, Anthracnose, Fresh Dragon Fruit) is returned as JSON and shown in the UI.
 
-  **5. AI Chatbot Interaction** Users can send farming-related queries to the chatbot. The /chat endpoint forwards the message to the Gemini model, which returns a tailored farming response.
+  **5. AI Chatbot Interaction:** Users can send farming-related queries to the chatbot. The /chat endpoint forwards the message to the Gemini model, which returns a tailored farming response.
 
-  **6. Speech Input & Output** The chatbot supports voice-based conversation using browser speech recognition and speech synthesis.
+  **6. Speech Input & Output:** The chatbot supports voice-based conversation using browser speech recognition and speech synthesis.
   
 ---
 
