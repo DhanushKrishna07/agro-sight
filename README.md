@@ -2,11 +2,43 @@
 
 **Agro-Sight** is an AI-powered web application built using *Flask* that helps farmers detect fruit diseases (like Guava and Dragon Fruit) and get multilingual agricultural assistance through a smart chatbot. It leverages *deep learning (CNN)* for disease prediction and *Gemini API* for a multilingual AI assistant that provides farming advice, pest control suggestions, and government scheme information.
 
+<p align="center">
+
+<img src="https://img.shields.io/badge/Python-3.9%2B-3776AB?style=for-the-badge&logo=python&logoColor=white"/>
+<img src="https://img.shields.io/badge/Flask-Framework-000000?style=for-the-badge&logo=flask&logoColor=white"/>
+<img src="https://img.shields.io/badge/TensorFlow-Deep%20Learning-FF6F00?style=for-the-badge&logo=tensorflow&logoColor=white"/>
+<img src="https://img.shields.io/badge/Google%20Gemini-Chatbot-4285F4?style=for-the-badge&logo=google&logoColor=white"/>
+<img src="https://img.shields.io/badge/HuggingFace-Deployed-FFD21E?style=for-the-badge&logo=huggingface&logoColor=black"/>
+<img src="https://img.shields.io/badge/License-MIT-green?style=for-the-badge"/>
+<img src="https://img.shields.io/github/stars/DhanushKrishna07/agro-sight?style=for-the-badge"/>
+
+</p>
+
 ---
 
 ## 🌐 Live Demo
 
 You can experience the interactive website live here: [**🌾Agro-Sight**](https://huggingface.co/spaces/DhanushKrishna07/Agro-Sight)
+
+---
+
+## 📚 Table of Contents
+
+- [🌾 Overview](#agro-sight--ai-driven-agricultural-intelligence-system)
+- [🌐 Live Demo](#-live-application)
+- [🚀 Features](#-features)
+- [🛠 Tech Stack](#-tech-stack)
+- [📸 Screenshots](#-screenshots)
+- [🎥 Demo Video](#-demo-video)
+- [⚙️ How It Works](#️-how-it-works)
+- [🔮 Future Enhancements](#-future-enhancements)
+- [🚀 Getting Started](#-getting-started)
+  - [Prerequisites](#prerequisites)
+  - [Installation](#installation)
+  - [Running the Application](#running-the-application)
+- [📦 Model Access](#-model-file-access)
+- [📄 License](#-license)
+- [📬 Contact](#-contact)
 
 ---
 
@@ -103,7 +135,7 @@ These are predictions of fruits with no disease symptoms.
 
 ---
 
-## 🎬 Demo Video
+## 🎥 Demo Video
 
 📺 Click below to **watch/download the full project demo**:
 
@@ -191,3 +223,17 @@ Upload a fruit image, click Predict, or interact with the AI chatbot for farming
 ## 📦 Model File Access
 ⚠️ Note: The `.h5` model file is not included in this repository due to GitHub's file size limitations.  
 If you would like to test the prediction feature locally, please feel free to request the model file by contacting me at: [dhanushkrishnab@gmail.com](mailto:dhanushkrishnab@gmail.com).
+
+---
+
+## 📄 License
+
+This project is licensed under the **MIT License** — free to use, modify, and distribute with proper attribution.
+
+---
+
+## 📧 Contact
+
+📨 **Email:** dhanushkrishnab@gmail.com  
+🔗 **LinkedIn:** linkedin.com/in/dhanushkrishna15  
+
