@@ -8,9 +8,8 @@
 <img src="https://img.shields.io/badge/Flask-Framework-000000?style=for-the-badge&logo=flask&logoColor=white"/>
 <img src="https://img.shields.io/badge/TensorFlow-Deep%20Learning-FF6F00?style=for-the-badge&logo=tensorflow&logoColor=white"/>
 <img src="https://img.shields.io/badge/Google%20Gemini-Chatbot-4285F4?style=for-the-badge&logo=google&logoColor=white"/>
-<img src="https://img.shields.io/badge/HuggingFace-Deployed-FFD21E?style=for-the-badge&logo=huggingface&logoColor=black"/>
+<img src="https://img.shields.io/badge/HuggingFace-Deployed-FFD21E?style=for-the-badge&logo=huggingface&logoColor=yellow"/>
 <img src="https://img.shields.io/badge/License-MIT-green?style=for-the-badge"/>
-<img src="https://img.shields.io/github/stars/DhanushKrishna07/agro-sight?style=for-the-badge"/>
 
 </p>
 
@@ -19,12 +18,6 @@
 ## 🌐 Live Demo
 
 You can experience the interactive website live here: [**🌾Agro-Sight**](https://huggingface.co/spaces/DhanushKrishna07/Agro-Sight)
-
----
-
-🌿 Agro-Sight — AI-Driven Agricultural Intelligence System
-<p align="center"> <img src="https://raw.githubusercontent.com/DhanushKrishna07/agro-sight/main/assets/banner.png" width="85%" /> </p>
-<p align="center"> <img src="https://img.shields.io/badge/Framework-Flask-00979D?style=flat&logo=flask&logoColor=white" /> <img src="https://img.shields.io/badge/Machine%20Learning-TensorFlow-FF6F00?style=flat&logo=tensorflow&logoColor=white" /> <img src="https://img.shields.io/badge/AI%20Model-Gemini%20API-4285F4?style=flat&logo=google&logoColor=white" /> <img src="https://img.shields.io/badge/Frontend-HTML%2C%20CSS%2C%20JS-blue?style=flat" /> <img src="https://img.shields.io/badge/Deployed%20on-HuggingFace-yellow?style=flat&logo=huggingface" /> <img src="https://img.shields.io/badge/License-MIT-green?style=flat" /> </p>
 
 ---
 
