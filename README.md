@@ -6,7 +6,7 @@
 
 ## 🌐 Live Demo
 
-You can experience the interactive website live here: [**🌾Agro-Sight**](https://dhanush-krishna-horizon-weather.onrender.com)
+You can experience the interactive website live here: [**🌾Agro-Sight**](https://huggingface.co/spaces/DhanushKrishna07/Agro-Sight)
 
 ---
 
