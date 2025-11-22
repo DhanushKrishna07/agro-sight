@@ -4,6 +4,12 @@
 
 ---
 
+## 🌐 Live Demo
+
+You can experience the interactive website live here: [**🌾Agro-Sight**](https://dhanush-krishna-horizon-weather.onrender.com)
+
+---
+
 ## 🚀 Features
 
 ### 🍏 AI-Based Fruit Disease Prediction
@@ -30,12 +36,28 @@
 
 ## 🛠 Tech Stack
 
-- *Backend*: Flask
-- *Frontend*: HTML, CSS, JavaScript
-- *AI Model*: TensorFlow / Keras (.h5)
-- *Chatbot*: Gemini API (Google Generative AI)
-- *Languages Supported*: English, Tamil, Hindi, Telugu, Kannada, more...
+### 1. Backend:
 
+  - **Python (Flask):** Acts as the main server framework, handling image uploads, routing, and API endpoints for prediction and chatbot functionality.
+  
+  - **TensorFlow / Keras:** Used to load and run the trained fruit disease prediction deep learning model.
+  
+  - **NumPy:** Supports image tensor manipulation and preprocessing before prediction.
+
+  - **Pillow (PIL):** Handles uploaded image reading and resizing.
+  
+  - **Flask-CORS:** Ensures secure communication between frontend and backend while allowing cross-origin API calls.
+  
+  - **Google Gemini API:** Used to generate intelligent farming responses through the chatbot.
+  
+### 2. Frontend:
+
+  - **HTML5:** Provides the structure for the web interface including file upload, chatbot UI, and prediction display.
+    
+  - **CSS (Custom Styling):** Adds UI polish, animations, glowing effects, chat sidebar UI, and background transitions.
+    
+  - **JavaScript:** Handles dynamic UI updates, file preview, prediction requests, chatbot messaging, speech recognition, and text-to-speech.
+  
 ---
 
 ## 📸 Demo Screenshots
@@ -64,16 +86,16 @@ These are predictions of fruits with no disease symptoms.
 ### 🗣 Chatbot – English  
 ![Chatbot English](assets/screenshots/Chatbot%20English.png)
 
-### 🇮🇳 Chatbot – Tamil  
+### 🗣 Chatbot – Tamil  
 ![Chatbot Tamil](assets/screenshots/Chatbot%20Tamil.png)
 
-### 🇮🇳 Chatbot – Hindi  
+### 🗣 Chatbot – Hindi  
 ![Chatbot Hindi](assets/screenshots/Chatbot%20Hindi.png)
 
-### 🇮🇳 Chatbot – Telugu
-![Chatbot Telugu](assets/screenshots/Chatbot%20Telugu.png)                                                                                       
+### 🗣 Chatbot – Telugu
+![Chatbot Telugu](assets/screenshots/Chatbot%20Telugu.png) 
 
-### 🇮🇳 Chatbot – Kannada
+### 🗣 Chatbot – Kannada
 ![Chatbot Kannada](assets/screenshots/Chatbot%20Kannada.png)
 
 ### 📈 Model Accuracy & Loss  
@@ -89,13 +111,81 @@ These are predictions of fruits with no disease symptoms.
 
 ---
 
+## ⚙️ How It Works
+
+### The application follows a hybrid AI workflow combining machine learning and language-based reasoning:
+
+  **1. Image Upload:** The user uploads a fruit image through the interface on Frontend.html.
+
+  **2. Image Preview:** The frontend instantly displays a preview using JavaScript before sending it to the backend.
+
+  **3. Backend Prediction:** Flask receives the uploaded file at the /predict endpoint, preprocesses the image (resizing, normalizing), and sends it to the TensorFlow model for prediction.
+
+  **4. Result Display:** The predicted class (e.g., Fruit Fly, Anthracnose, Fresh Dragon Fruit) is returned as JSON and shown in the UI.
+
+  **5. AI Chatbot Interaction** Users can send farming-related queries to the chatbot. The /chat endpoint forwards the message to the Gemini model, which returns a tailored farming response.
+
+  **6. Speech Input & Output** The chatbot supports voice-based conversation using browser speech recognition and speech synthesis.
+  
+---
+
+## 🔮 Future Enhancements
+
+- Multi-crop and leaf disease support
+
+- Offline prediction using TensorFlow Lite
+
+- Farmer profile system with personalized recommendations
+
+- Integration with government DBs for localized subsidies & alerts
+
+- Multi-language dashboard with OCR image-to-text
+
+---
+
 ## 🚀 Getting Started
+
+To get a local copy up and running, follow these simple steps.
+
+### Prerequisites
+   - Python 3.9+
+
+   - pip package manager
+   
+   - Gemini API Key
+
+### Installation
+
+**1. Clone the repository:**
 
 ```bash
 git clone https://github.com/DhanushKrishna07/agro-sight.git
 cd agro-sight
+pip install -r requirements.txt
+```
+
+**2. Set up environment variables:**
+
+Create a .env file in the root directory of your project and add your API key:
+
+```bash
+GEMINI_API_KEY=your_gemini_api_key_here
+```
+
+### Running the Application
+
+```bash
 python "Agri AI App.py"
 ```
+
+Once running, open the web app in your browser at:
+
+```bash
+http://localhost:5000
+```
+
+Upload a fruit image, click Predict, or interact with the AI chatbot for farming guidance.
+
 ---
 
 ## 📦 Model File Access
