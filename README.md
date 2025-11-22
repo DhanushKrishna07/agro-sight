@@ -175,7 +175,7 @@ GEMINI_API_KEY=your_gemini_api_key_here
 ### Running the Application
 
 ```bash
-python "Agri AI App.py"
+python agri_ai_app.py
 ```
 
 Once running, open the web app in your browser at:
