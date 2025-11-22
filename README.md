@@ -2,6 +2,12 @@
 
 **Agro-Sight** is an AI-powered web application built using *Flask* that helps farmers detect fruit diseases (like Guava and Dragon Fruit) and get multilingual agricultural assistance through a smart chatbot. It leverages *deep learning (CNN)* for disease prediction and *Gemini API* for a multilingual AI assistant that provides farming advice, pest control suggestions, and government scheme information.
 
+![Python](https://img.shields.io/badge/Python-3.10+-blue)
+![Flask](https://img.shields.io/badge/Framework-Flask-orange)
+![TensorFlow](https://img.shields.io/badge/DeepLearning-TensorFlow-yellow)
+![Gemini API](https://img.shields.io/badge/Chatbot-Gemini%20API-green)
+![Status](https://img.shields.io/badge/Status-Active-success)
+![License](https://img.shields.io/badge/License-MIT-lightgrey)
 ---
 
 ## 🚀 Features
