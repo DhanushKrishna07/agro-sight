@@ -7,7 +7,7 @@ API_KEY = os.getenv("GEMINI_API_KEY")
 genai.configure(api_key=API_KEY)
 
 # Load Gemini Model
-model = genai.GenerativeModel("models/gemini-2.0-flash-thinking-exp-1219")
+model = genai.GenerativeModel("models/gemini-2.5-flash")
 
 # Define chatbot function
 def get_chat_response(user_input):
