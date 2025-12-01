@@ -14,6 +14,15 @@
         --sidebar-width: 300px;
       }
       body {
+        overflow-y: scroll;          /* Always reserve scrollbar space */
+        -ms-overflow-style: none;    /* IE and Edge */
+        scrollbar-width: none;       /* Firefox */
+      }
+      body::-webkit-scrollbar {
+        width: 0;                    /* Chrome, Safari, Opera */
+        background: transparent;
+      }
+      body {
         font-family: "Poppins", sans-serif;
         display: flex;
         flex-direction: column;
@@ -140,22 +149,35 @@
         background: linear-gradient(135deg, #ff4b2b, #ff416c);
         transform: scale(1.05); 
       }
+      .toggle-chatbot:hover {
+        transform: translateX(-50%) scale(1.05);
+      }
       .chatbot-sidebar {
         width: var(--sidebar-width);
         background: rgba(255, 255, 255, 0.201);
         backdrop-filter: blur(10px);
-        padding: 10px;
+        padding: 15px;
+        padding-bottom: 25px; /* Added extra padding at bottom */
         position: fixed; 
         right: calc(-1 * var(--sidebar-width)); 
         top: 0; 
-        height: 100%; 
+        height: 100vh; 
         box-sizing: border-box;
         transition: right 0.7s ease-in-out;
         z-index: 100; 
-        box-shadow: -5px 0 15px rgba(0, 0, 0, 0.5); 
+        box-shadow: -5px 0 15px rgba(0, 0, 0, 0.5);
+        overflow-y: auto; /* Allow scrolling if content is too tall */
+        display: flex;
+        flex-direction: column;
       }
       .chatbot-sidebar.open {
         right: 0;
+      }
+      .chatbot-sidebar h2 {
+        margin-top: 5px;
+        margin-bottom: 10px;
+        color: white;
+        flex-shrink: 0; /* Prevent title from shrinking */
       }
       .about {
         color: white;
@@ -164,9 +186,10 @@
         font-size: 1.2rem;
       }
       .toggle-chatbot {
-        position: absolute;
+        position: fixed;
         top: 10px;
-        right: 47.4%; 
+        left: 50%;
+        transform: translateX(-50%);
         background: rgba(255, 255, 255, 0.201);
         border: none;
         padding: 10px;
@@ -174,7 +197,7 @@
         height: 80px;
         width: 80px;
         border-radius: 16%; 
-        z-index: 2; 
+        z-index: 102; 
         display: flex;
         align-items: center;
         justify-content: center;
@@ -182,15 +205,17 @@
       }
       #voiceSelect {
         width: 100%;
-        margin-top: 5px;
-        padding: 8px;
+        margin-top: 10px;
+        padding: 10px;
         border-radius: 5px;
         box-sizing: border-box;
+        flex-shrink: 0; /* Prevent select from being cut off */
       }
       .button-container {
         display: flex;
         justify-content: space-between;
         flex-wrap: wrap;
+        flex-shrink: 0; /* Prevent buttons from being cut off */
       }
       .button-container button {
         flex: 1 1 45%; 
@@ -198,22 +223,25 @@
         min-width: 120px;
       }
       #chatbox {
-        height: 400px;
+        height: 350px; /* Reduced height to make room for controls */
         overflow-y: auto;
         background: #f5f1f1cb;
         padding: 10px;
         border-radius: 5px;
         margin-bottom: 10px;
+        flex-shrink: 1; /* Allow chatbox to shrink if needed */
       }
       #chatInput {
         width: 100%;
         margin-top: 10px;
-        padding: 8px;
+        margin-bottom: 5px;
+        padding: 10px;
         box-sizing: border-box;
+        border-radius: 5px;
+        border: 1px solid #ccc;
+        flex-shrink: 0; /* Prevent input from being cut off */
       }
-
       /* --- MEDIA QUERIES FOR RESPONSIVENESS --- */
-
       /* Medium to Large Screens (e.g., tablets and desktops) */
       @media (min-width: 768px) {
         .container {
@@ -222,11 +250,11 @@
         h1 {
           font-size: 3rem;
         }
-
         .toggle-chatbot {
-            position: absolute; 
+            position: fixed; 
             top: 10px; 
-            right: 47.4%; 
+            left: 50%;
+            transform: translateX(-50%);
             width: 80px;
             height: 80px;
             font-size: 1.5rem;
@@ -234,12 +262,15 @@
         }
         .chatbot-sidebar {
             top: 0;
-            padding-top: 10px;
+            padding: 15px;
+            padding-bottom: 25px;
             width: 350px; 
             --sidebar-width: 350px;
         }
+        #chatbox {
+          height: 400px; /* More height on larger screens */
+        }
       }
-
       /* Small Screens (e.g., mobile phones) */
       @media (max-width: 767px) {
         h1 {
@@ -251,10 +282,12 @@
         .toggle-chatbot {
           position: fixed; 
           top: 10px;
-          right: 10px !important; 
+          right: 10px !important;
+          left: auto !important;
+          transform: none !important;
           width: 50px;
           height: 50px;
-          z-index: 101; 
+          z-index: 101 !important; 
           background: linear-gradient(135deg, #ff416c, #ff4b2b); 
           color: white;
           box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
@@ -264,12 +297,14 @@
             width: 90%; 
             right: -90%;
             --sidebar-width: 90vw;
+            padding: 15px;
+            padding-bottom: 30px; /* More padding on mobile */
         }
         .chatbot-sidebar.open {
             right: 0;
         }
         #chatbox {
-          height: 300px; 
+          height: 280px; /* Reduced to ensure room for controls */
         }
       }
     </style>
@@ -291,26 +326,16 @@
     <button class="toggle-chatbot" onclick="toggleChatbot()">🤖 Chat</button>
     <div class="chatbot-sidebar" id="chatbot">
       <h2>🤖 AI Chatbot</h2>
-      <div
-        id="chatbox"
-        style="
-          height: 400px;
-          overflow-y: auto;
-          background: #f5f1f1cb;
-          padding: 10px;
-          border-radius: 5px;
-        "
-      >
+      <div id="chatbox">
         <p>Chatbot interaction will appear here...</p>
       </div>
       <input
         type="text"
         id="chatInput"
         placeholder="Ask me anything..."
-        style="width: 100%; margin-top: 10px; padding: 8px"
       />
       <div class="button-container">
-        <button onclick="sendMessage()">Send</button>
+        <button onclick="sendMessage()">📤 Send</button>
         <button id="voiceInputButton">🎙️ Speak</button>
         <button onclick="speakResponse()">🗣️ Listen</button>
         <button onclick="exportChat()">📄 Export Chat</button>
@@ -336,7 +361,6 @@
         // Use a slight delay and preload logic for background to reduce flicker
         const newBgUrl = "url('/static/images/BG2.jpeg') no-repeat center center/cover";
         document.body.style.background = newBgUrl;
-
         // Start prediction process
         const file = document.getElementById("imageUpload").files[0];
         if (!file) {
