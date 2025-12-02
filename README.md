@@ -11,7 +11,7 @@
   <img src="https://img.shields.io/badge/Google%20Gemini-Chatbot-4285F4?style=for-the-badge&logo=google&logoColor=white"/>
   
   <img src="https://img.shields.io/badge/HTML5-Clean%20Layout-E34F26?style=for-the-badge&logo=html5&logoColor=white"/>
-  <img src="https://img.shields.io/badge/CSS3-Responsive%20Design-1572B6?style=for-the-badge&logo=css3&logoColor=white"/>
+  <img src="https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white"/>
   <img src="https://img.shields.io/badge/JavaScript-Vanilla%20JS-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black"/>
 
   <img src="https://img.shields.io/badge/HuggingFace-Deployed-FFD21E?style=for-the-badge&logo=huggingface&logoColor=yellow"/>
