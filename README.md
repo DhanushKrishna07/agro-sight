@@ -33,7 +33,7 @@ You can experience the interactive website live here: [**🌾Agro-Sight**](https
 - [🌐 Live Demo](#-live-application)
 - [🚀 Features](#-features)
 - [🛠 Tech Stack](#-tech-stack)
-- [📸 Screenshots](#-screenshots)
+- [📸 Demo Screenshots](#-demo-screenshots)
 - [🎥 Demo Video](#-demo-video)
 - [⚙️ How It Works](#️-how-it-works)
 - [🔮 Future Enhancements](#-future-enhancements)
